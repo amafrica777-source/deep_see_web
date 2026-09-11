@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deep See AI & Robotics | Home</title>
-    <link rel="stylesheet" href="/deep_see_web/css/global_styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/global_styles.css">
 </head>
 
 <body>
@@ -13,127 +16,100 @@
          NAVIGATION
     ============================= -->
     <header class="navbar">
-        <div class="logo">DeepSee AI</div>
+        <a href="index.html" class="logo">
+            <img src="assets/deepsee-mark.png" alt="Deep See logo">
+            Deep <span class="accent">See</span>
+        </a>
         <nav>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="/deep_see_web/pages/services.html">Services</a></li>
-                <li><a href="/deep_see_web/pages/projects.html">Projects</a></li>
-                <li><a href="/deep_see_web/pages/research.html">Research</a></li>
-                <li><a href="/deep_see_web/pages/contact.html">Contact</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="pages/services.html">Services</a></li>
+                <li><a href="pages/projects.html">Projects</a></li>
+                <li><a href="pages/research.html">Research</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
 
     <!-- ============================
-         HERO SECTION
+         HERO SECTION (orbiting capability system)
     ============================= -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Building the Future with AI, Robotics & Intelligent Software</h1>
-            <p>We design next‑generation AI systems, robotics solutions, and powerful digital products that transform industries.</p>
-            <a href="#contact" class="cta-btn">Start a Project</a>
+    <section class="hero-bio">
+        <div class="particles" id="particles"></div>
+
+        <div class="hero-bio-content">
+            <div class="orbit">
+                <div class="orbit-ring"></div>
+
+                <div class="orbit-center">
+                    <div class="orbit-ping"></div>
+                    <div class="orbit-ping delay"></div>
+                    <img src="assets/deepsee-mark.png" alt="Deep See">
+                </div>
+
+                <div class="orbit-spin">
+                    <div class="orbit-badge-pos" data-angle="-90">
+                        <div class="orbit-badge">
+                            <div class="orbit-badge-icon">
+                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><line x1="13" y1="13" x2="5" y2="7" stroke="#5ee6ff" stroke-width="1.1"/><line x1="13" y1="13" x2="21" y2="8" stroke="#5ee6ff" stroke-width="1.1"/><line x1="13" y1="13" x2="18" y2="20" stroke="#5ee6ff" stroke-width="1.1"/><circle cx="13" cy="13" r="2.4" fill="#5ee6ff"/><circle cx="5" cy="7" r="1.8" fill="#5ee6ff"/><circle cx="21" cy="8" r="1.8" fill="#5ee6ff"/><circle cx="18" cy="20" r="1.8" fill="#5ee6ff"/></svg>
+                            </div>
+                            <span class="orbit-badge-label">AI Applications</span>
+                        </div>
+                    </div>
+                    <div class="orbit-badge-pos" data-angle="0">
+                        <div class="orbit-badge">
+                            <div class="orbit-badge-icon">
+                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><line x1="13" y1="3" x2="13" y2="7" stroke="#5ee6ff" stroke-width="1.6"/><circle cx="13" cy="3" r="1.6" fill="#5ee6ff"/><rect x="5" y="7" width="16" height="14" rx="4" stroke="#5ee6ff" stroke-width="1.7"/><circle cx="10" cy="14" r="1.7" fill="#5ee6ff"/><circle cx="16" cy="14" r="1.7" fill="#5ee6ff"/></svg>
+                            </div>
+                            <span class="orbit-badge-label">Robotics &amp; Autonomy</span>
+                        </div>
+                    </div>
+                    <div class="orbit-badge-pos" data-angle="90">
+                        <div class="orbit-badge">
+                            <div class="orbit-badge-icon">
+                                <span style="font-family:'JetBrains Mono',monospace;font-size:18px;font-weight:500;color:#5ee6ff;">&lt;/&gt;</span>
+                            </div>
+                            <span class="orbit-badge-label">Web &amp; Product Eng.</span>
+                        </div>
+                    </div>
+                    <div class="orbit-badge-pos" data-angle="180">
+                        <div class="orbit-badge">
+                            <div class="orbit-badge-icon">
+                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><circle cx="13" cy="13" r="9" stroke="#5ee6ff" stroke-width="1.7"/><circle cx="13" cy="13" r="3.4" fill="#5ee6ff"/></svg>
+                            </div>
+                            <span class="orbit-badge-label">Applied Research</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="eyebrow">Signal from the depths</div>
+            <h1>We build AI &amp; robotics that see in the dark.</h1>
+            <p>Autonomous systems, production machine learning, and the software that ties it together — engineered for the environments everyone else avoids.</p>
+            <div class="hero-actions">
+                <a href="pages/contact.html" class="cta-btn">Start a project</a>
+                <a href="#projects" class="btn-secondary">See our work</a>
+            </div>
         </div>
     </section>
 
 
     <!-- ============================
-         WHAT WE DO (CORE SERVICES)
+         WHAT WE BUILD (CORE SERVICES)
     ============================= -->
     <section id="services" class="services">
-        <h2>What We Do</h2>
-
-        <div class="service-grid">
-
-            <div class="service-card">
-                <h3>AI Apps Development</h3>
-                <p>Custom AI-powered applications built for automation, prediction, and intelligent decision-making.</p>
-            </div>
-
-            <div class="service-card">
-                <h3>Robotics & Automation</h3>
-                <p>Robotic systems and automation tools engineered for precision, efficiency, and innovation.</p>
-            </div>
-
-            <div class="service-card">
-                <h3>Web App Development</h3>
-                <p>Modern, scalable, high-performance web applications tailored to your business needs.</p>
-            </div>
-
-            <div class="service-card">
-                <h3>Software Development</h3>
-                <p>Custom software solutions designed to solve complex problems and streamline operations.</p>
-            </div>
-
-            <div class="service-card">
-                <h3>Deep See AI</h3>
-                <p>Advanced AI research and robotics inspired by deep-sea exploration and autonomous systems.</p>
-            </div>
-
-        </div>
+        <h2>What we build</h2>
+        <div class="service-grid" id="services-grid"></div>
     </section>
 
 
     <!-- ============================
-         WHY CHOOSE US
-    ============================= -->
-    <section class="why-us">
-        <h2>Why Choose Us</h2>
-
-        <div class="why-grid">
-
-            <div class="why-card">
-                <h3>Cutting‑Edge Innovation</h3>
-                <p>We push boundaries with advanced AI and robotics research.</p>
-            </div>
-
-            <div class="why-card">
-                <h3>Custom Solutions</h3>
-                <p>Every project is tailored to your exact needs and goals.</p>
-            </div>
-
-            <div class="why-card">
-                <h3>Expert Engineering</h3>
-                <p>Our team builds reliable, scalable, and future‑ready systems.</p>
-            </div>
-
-            <div class="why-card">
-                <h3>Long‑Term Partnership</h3>
-                <p>We support you from concept to deployment and beyond.</p>
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- ============================
-         FEATURED PROJECTS
+         SELECTED WORK
     ============================= -->
     <section id="projects" class="projects">
-        <h2>Featured Projects</h2>
-
-        <div class="project-grid">
-
-            <div class="project-card">
-                <div class="project-img"></div>
-                <h3>AI Vision System</h3>
-                <p>An intelligent computer vision platform for real-time object detection.</p>
-            </div>
-
-            <div class="project-card">
-                <div class="project-img"></div>
-                <h3>Autonomous Robotics Unit</h3>
-                <p>A fully autonomous robotic prototype designed for industrial tasks.</p>
-            </div>
-
-            <div class="project-card">
-                <div class="project-img"></div>
-                <h3>DeepSee Neural Engine</h3>
-                <p>A research-driven AI engine inspired by deep-sea biological systems.</p>
-            </div>
-
-        </div>
+        <h2>Selected work</h2>
+        <div class="project-grid" id="projects-grid"></div>
     </section>
 
 
@@ -141,23 +117,11 @@
          CALL TO ACTION
     ============================= -->
     <section class="cta">
-        <h2>Let’s Build Something Extraordinary</h2>
-        <a href="#contact" class="cta-btn">Work With Us</a>
-    </section>
-
-
-    <!-- ============================
-         CONTACT SECTION
-    ============================= -->
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Email Address" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+        <div class="cta-ring large"></div>
+        <div class="cta-ring small"></div>
+        <h2>Send us a signal.</h2>
+        <p>Every deep problem starts with a faint signal. We'll help you find it and build on it.</p>
+        <a href="pages/contact.html" class="cta-btn">Work with us</a>
     </section>
 
 
@@ -165,8 +129,9 @@
          FOOTER
     ============================= -->
     <footer class="footer">
-        <p>© 2026 DeepSee AI & Robotics. All rights reserved.</p>
+        <p>© 2026 DeepSee AI &amp; Robotics — Sharjah, UAE</p>
     </footer>
 
+    <script src="js/home.js" defer></script>
 </body>
 </html>
